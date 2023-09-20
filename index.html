@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide {
+            display: none;
+        }
+        .slide img {
+    
+            width:1000px;
+            height:400px;
+        }
+        
+        .pro {
+            position: relative;
+           
+            left:-500px;
+        }
+        .pro1{
+            position: relative;
+            
+            left:500;
+        }
+        .pro,.pro1 button{
+            float:left;
+            position: relative;
+            top:-52px;
+        }
+        .pro{
+            left:700px;
+        }
+        .pro1{
+            left:750px;
+        }
+        .khung1{
+            width:1536px;
+            height:540px;
+            margin:auto;
+            text-align: center;
+        }
+        .khung2{
+            width:500px;
+            height:600px;
+            border:1px solid black;
+            margin:auto;
+            clear:both;
+        }
+        .box{
+            width:200px;
+            height:22px;
+        }
+    .adn1{
+        width:500px;
+        height:30px;
+   
+    }
+    .khung2 h2{
+        text-align: center;
+    }.khung2 {
+        padding-left: 10px;
+    }.box{
+       margin-left: 100px;
+       background-color: white;
+       border: 1px solid rgb(8, 226, 226) ;
+    }
+    .boxx{
+        margin-left: 50px;
+    }
+    label{
+        width:100px;
+        height:25px;
+        background-color: black;
+    }
+    .submit{
+        width: 70px;
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+   .thongbao{
+    color:red;
+    font-size: 10px;
+   }
+    </style>
+</head>
+<body>
+    <div class="khung1">
+    <div class="slide">
+        
+        <img src="./anhfpt1.png" alt="">
+        <h1>1/5</h1>
+    </div>
+    <div class="slide">
+        
+        <img src="./anhfpt2.png" alt="">
+        <h1>2/5</h1>
+    </div>
+    <div class="slide">
+        
+        <img src="./anh1.jpeg" alt="">
+        <h1>3/5</h1>
+    </div>
+    <div class="slide">
+        
+        <img src="./anh2.jpeg" alt="">
+        <h1>4/5</h1>
+    </div>
+    <div class="slide">
+        
+        <img src="./anh3.jpeg" alt="">
+        <h1>5/5</h1>
+    </div>
+    
+    <div class="pro"><button type="button" onclick="AutoLoop()">Auto</button></div>
+    <div class="pro1"><button type="button" onclick="StopLoop()">Stop</button></div>
+</div>
+  <div class="khung2">
+     <h2> ĐĂNG KÝ KHÓA HỌC ONLINE </h2>
+     <div class="adn1">
+        <lable>Họ tên</lable>
+    <input class="box" type="type" id="name" name=""></input>
+    </div>
+<p class="thongbao"></p>
+
+    <div class="adn1">
+        <lable>Email</lable>
+    <input class="box" type="email" id="email" name=""></input>
+    </div>
+<p class="thongbao"></p>
+
+
+    <div class="adn1">
+        <lable>Số điện thoại</lable>
+    <input class="box" type="phone" id="phone" name=""></input>
+    </div>
+<p class="thongbao"></p>
+
+
+
+    <div class="adn1">
+        <lable>Khóa Học</lable>
+    <select class="box" id="change" onchange="luachon()">
+        <option value="chane">Chọn Khóa Học</option>
+        <option value="1">HTML</option>
+        <option value="2">JS</option>
+        <option value="3">PHP</option>
+    </select>
+    </div>
+    <div class="adn1">
+        <lable>Học phí</lable>
+    <input class="box" type="text" name="" id="kqchon"></input>
+    </div>
+    <div class="adn2">
+        <lable>Hình Thức Học</lable>
+        
+            <input class="boxx" name="dky" type="radio" value="off" checked><span>Học tại trường</span>
+           <input class="boxxx" name="dky" type="radio" value="on"><span>Học online</span>
+         
+    </div>
+    <button class="submit" type="submit" onclick="dangkyy()">Đăng ký</button>
+  </div> 
+  
+   <script src="main.js"></script>
+</body>
+</html>
